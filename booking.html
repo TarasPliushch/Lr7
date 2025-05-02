@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання - Relecloud</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Relecloud</div>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="booking.html" class="active">Бронювання</a></li>
+                <li><a href="about.html">Про нас</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Бронювання подорожі на Місяць</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="booking-form">
+            <h2>Заповніть форму для бронювання</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Повне ім'я</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="departure-date">Дата вильоту</label>
+                    <input type="date" id="departure-date" name="departure-date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="package">Пакет подорожі</label>
+                    <select id="package" name="package" required>
+                        <option value="">Оберіть пакет</option>
+                        <option value="basic">Базовий (7 днів) - $50,000</option>
+                        <option value="premium">Преміум (14 днів) - $90,000</option>
+                        <option value="vip">VIP (30 днів) - $150,000</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="passengers">Кількість пасажирів</label>
+                    <input type="number" id="passengers" name="passengers" min="1" max="10" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="special-requests">Особливі побажання</label>
+                    <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+                </div>
+                
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Я погоджуюсь з умовами та політикою конфіденційності</label>
+                </div>
+                
+                <button type="submit" class="cta-button">Забронювати</button>
+            </form>
+        </section>
+        
+        <section class="packages">
+            <h2>Доступні пакети</h2>
+            <div class="package-grid">
+                <div class="package">
+                    <h3>Базовий</h3>
+                    <p class="price">$50,000</p>
+                    <ul>
+                        <li>7 днів на Місяці</li>
+                        <li>Стандартний номер</li>
+                        <li>3 екскурсії</li>
+                        <li>Харчування включено</li>
+                    </ul>
+                </div>
+                <div class="package">
+                    <h3>Преміум</h3>
+                    <p class="price">$90,000</p>
+                    <ul>
+                        <li>14 днів на Місяці</li>
+                        <li>Покращений номер</li>
+                        <li>6 екскурсій</li>
+                        <li>Харчування + SPA</li>
+                    </ul>
+                </div>
+                <div class="package">
+                    <h3>VIP</h3>
+                    <p class="price">$150,000</p>
+                    <ul>
+                        <li>30 днів на Місяці</li>
+                        <li>Люкс номер</li>
+                        <li>Персональний гід</li>
+                        <li>Всі екскурсії + приватний космоліт</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Relecloud</h3>
+                <p>Перша українська компанія з космічного туризму.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <p>info@relecloud.space</p>
+                <p>+380 44 123 45 67</p>
+            </div>
+            <div class="footer-section">
+                <h3>Соціальні мережі</h3>
+                <div class="social-icons">
+                    <a href="#">FB</a>
+                    <a href="#">IG</a>
+                    <a href="#">TW</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Relecloud. Усі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
